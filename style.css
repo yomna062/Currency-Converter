@@ -1,0 +1,176 @@
+/* إضافة تأثير للـ Gradient الخلفي المتحرك */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-animated {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(45deg, #6ee7b7, #5d9bfe, #ad63f3);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* إضافة تأثير للألوان المتحركة للنص */
+@keyframes textColorAnimation {
+    0% {
+        color: #6ee7b7;
+    }
+    50% {
+        color: #5d9bfe;
+    }
+    100% {
+        color: #ad63f3;
+    }
+}
+
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #6ee7b7, #5d9bfe, #ad63f3);
+    background-size: 400% 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: gradientAnimation 6s ease infinite, textColorAnimation 6s ease infinite;
+}
+
+/* تحريك الدوائر */
+@keyframes smallCircleAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+}
+
+/* تخصيص الدوائر */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    animation: smallCircleAnimation 6s infinite;
+    opacity: 0.5;
+}
+
+.circle:nth-child(odd) {
+    background-color: rgba(56, 189, 248, 0.6);
+}
+
+.circle:nth-child(2) {
+    background-color: rgba(249, 168, 37, 0.6);
+}
+
+.circle:nth-child(3) {
+    background-color: rgba(12, 103, 45, 0.6);
+}
+
+.circle:nth-child(4) {
+    background-color: rgba(255, 99, 132, 0.6);
+}
+
+.circle:nth-child(5) {
+    background-color: rgba(75, 85, 99, 0.6);
+}
+
+/* تخصيص مواضع الدوائر عبر الصفحة */
+.circle1 {
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    left: 10%;
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+.circle2 {
+    width: 40px;
+    height: 40px;
+    top: 30%;
+    left: 40%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    display: none;
+}
+.circle3 {
+    width: 30px;
+    height: 30px;
+    top: 20%;
+    left: 20%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    
+}
+.circle4 {
+    width: 60px;
+    height: 60px;
+    top: 80%;
+    left: 40%;
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+.circle5 {
+    width: 55px;
+    height: 55px;
+    top: 70%;
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+.circle6 {
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 70%;
+    animation-duration: 6s;
+    animation-delay: 5s;
+}
+
+.circle7 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    left: 10%;
+    animation-duration: 7s;
+    animation-delay: 6s;
+}
+
+.circle8 {
+    width: 45px;
+    height: 45px;
+    top: 80%;
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: 7s;
+}
+
+.circle9 {
+    width: 50px;
+    height: 50px;
+    top: 30%;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 8s;
+}
+
+.circle10 {
+    width: 55px;
+    height: 55px;
+    top: 40%;
+    left: 90%;
+    animation-duration: 10s;
+    animation-delay: 9s;
+}

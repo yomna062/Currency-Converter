@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icone.png">
+    <title>Currency Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-2xl shadow-md w-full max-w-md text-center">
+      <h1 class="text-2xl font-bold mb-6 text-blue-700">Currency Converter</h1>
+
+      <input id="amount" type="number" placeholder="Enter amount"
+        class="w-full p-2 border border-gray-300 rounded-xl mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+
+      <div class="flex justify-between gap-4 mb-4">
+        <select id="from-currency"
+          class="w-1/2 p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"></select>
+        <select id="to-currency"
+          class="w-1/2 p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"></select>
+      </div>
+
+      <button id="convert-btn"
+        class="bg-blue-500 text-white px-6 py-2 rounded-xl hover:bg-blue-600 transition">Convert</button>
+
+      <p id="result" class="mt-6 text-lg text-green-600 font-semibold"></p>
+    </div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+    <div class="circle circle6"></div>
+    <div class="circle circle7"></div>
+    <div class="circle circle8"></div>
+    <div class="circle circle9"></div>
+    <div class="circle circle10"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
